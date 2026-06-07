@@ -1,7 +1,8 @@
+import profileImg from "../assets/jaswant.jpg";
+
 function About() {
   return (
     <section id="about" className="about-section">
-
       <div className="container">
 
         <div className="section-title">
@@ -12,17 +13,12 @@ function About() {
         <div className="about-grid">
 
           <div className="about-image">
-            <img
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43"
-              alt="Profile"
-            />
+            <img src={profileImg} alt="Jaswant" />
           </div>
 
           <div className="about-content">
 
-            <h3>
-              Helping Businesses Stand Out Online
-            </h3>
+            <h3>Helping Businesses Stand Out Online</h3>
 
             <p>
               I'm Jaswant, a freelance web designer and developer.
@@ -64,9 +60,7 @@ function About() {
           </div>
 
         </div>
-
       </div>
-
     </section>
   );
 }
