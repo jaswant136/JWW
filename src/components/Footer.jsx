@@ -51,7 +51,7 @@ function Footer() {
         <div className="footer-bottom">
 
           <p>
-            © 2026 Jaswangt. All Rights Reserved.
+            © 2026 Jaswant web works. All Rights Reserved.
           </p>
 
         </div>
