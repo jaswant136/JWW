@@ -65,9 +65,15 @@ function Pricing() {
                 ))}
               </ul>
 
-              <button>
-                Get Started
-              </button>
+              <button
+  onClick={() =>
+    document.getElementById("contact").scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+>
+  Get Started
+</button>
             </div>
           ))}
 
