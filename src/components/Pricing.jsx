@@ -13,7 +13,7 @@ function Pricing() {
 
     {
       title: "Business",
-      price: "₹1,999",
+      price: "₹1,499",
       featured: true,
       features: [
         "5 Pages Website",
@@ -26,7 +26,7 @@ function Pricing() {
 
     {
       title: "Premium",
-      price: "₹2,999",
+      price: "₹2,499",
       features: [
         "Custom Website",
         "Advanced UI/UX",
