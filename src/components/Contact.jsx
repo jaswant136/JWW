@@ -9,24 +9,40 @@ import {
 
 function Contact() {
   return (
-    <section id="contact" className="contact-section">
+    <section
+      id="contact"
+      className="contact-section"
+      data-aos="fade-up"
+    >
       <div className="container">
 
         <div className="section-title">
           <span>CONTACT</span>
-          <h2>Let's Work Together</h2>
+
+          <h2>
+            Let's Build Something
+            Amazing Together
+          </h2>
+
+          <p className="contact-subtitle">
+            Have a project in mind? Let's discuss how we can
+            create a powerful online presence for your business.
+          </p>
         </div>
 
         <div className="contact-grid">
 
-          <div className="contact-info">
+          <div
+            className="contact-info"
+            data-aos="fade-right"
+          >
 
             <h3>Ready To Start Your Project?</h3>
 
             <p>
-              Whether you need a website, social media creatives,
-              branding or digital marketing support, let's discuss
-              your project and bring your ideas to life.
+              Whether you need a website, branding,
+              social media creatives or digital marketing,
+              I'm here to help bring your vision to life.
             </p>
 
             <div className="contact-item">
@@ -50,7 +66,7 @@ function Contact() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/jaswant-web-workshop-39a95a414?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                href="https://www.linkedin.com/in/jaswant-web-workshop-39a95a414"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -61,12 +77,15 @@ function Contact() {
 
           </div>
 
-          <div className="contact-form">
+          <div
+            className="contact-form-box"
+            data-aos="fade-left"
+          >
 
             <h3>Start Your Project</h3>
 
             <p>
-              Choose the method that works best for you.
+              Choose your preferred method and let's get started.
             </p>
 
             <a
@@ -76,7 +95,7 @@ function Contact() {
               className="contact-action-btn whatsapp-btn"
             >
               <FaWhatsapp />
-              Chat on WhatsApp
+              Chat On WhatsApp
             </a>
 
             <a
@@ -88,6 +107,10 @@ function Contact() {
               <FaWpforms />
               Fill Project Form
             </a>
+
+            <div className="contact-note">
+              Response within 24 hours ⚡
+            </div>
 
           </div>
 

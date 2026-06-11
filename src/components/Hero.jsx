@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation";
 import { FaArrowRight } from "react-icons/fa";
 
 function Hero() {
@@ -6,20 +7,34 @@ function Hero() {
       <div className="container hero-content">
 
         <span className="hero-tag">
-          FREELANCE WEB DESIGNER • DIGITAL CREATOR
+          FREELANCE WEB DESIGNER • DEVELOPER
         </span>
 
         <h1>
-          Building Websites
+          I Create
           <br />
-          That Grow
-          <span> Businesses</span>
+
+          <span className="animated-text">
+            <TypeAnimation
+              sequence={[
+                "Modern Websites",
+                2000,
+                "Brand Identities",
+                2000,
+                "Social Media Ads",
+                2000,
+                "Business Growth",
+                2000,
+              ]}
+              wrapper="span"
+              repeat={Infinity}
+            />
+          </span>
         </h1>
 
         <p>
-          I help businesses establish a strong online presence through
-          modern websites, social media advertising, branding and
-          creative design solutions.
+          Helping businesses build a strong online presence
+          through websites, branding and digital marketing.
         </p>
 
         <div className="hero-buttons">
@@ -28,27 +43,8 @@ function Hero() {
           </a>
 
           <a href="#contact" className="btn-secondary">
-            Start A Project
+            Hire Me
           </a>
-        </div>
-
-        <div className="hero-stats">
-
-          <div>
-            <h3>5+</h3>
-            <span>Projects Built</span>
-          </div>
-
-          <div>
-            <h3>100%</h3>
-            <span>Responsive Design</span>
-          </div>
-
-          <div>
-            <h3>24/7</h3>
-            <span>Support</span>
-          </div>
-
         </div>
 
       </div>

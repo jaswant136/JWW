@@ -10,39 +10,56 @@ function Services() {
     {
       icon: <FaLaptopCode />,
       title: "Website Design",
-      desc: "Modern, responsive and conversion-focused websites.",
+      desc: "Beautiful and modern website designs focused on user experience and conversions.",
     },
     {
       icon: <FaRocket />,
-      title: "Website Development",
-      desc: "Fast, SEO-friendly and optimized web development.",
+      title: "Web Development",
+      desc: "Fast, responsive and SEO-friendly websites built with modern technologies.",
     },
     {
       icon: <FaBullhorn />,
-      title: "Social Media Ads",
-      desc: "Creative advertisements that attract customers.",
+      title: "Digital Marketing",
+      desc: "Creative social media campaigns and advertisements that attract customers.",
     },
     {
       icon: <FaPalette />,
-      title: "Brand Design",
-      desc: "Posters, banners and branding materials.",
+      title: "Brand Identity",
+      desc: "Logos, posters, banners and complete branding solutions for businesses.",
     },
   ];
 
   return (
-    <section id="services" className="services-section">
+    <section
+      id="services"
+      className="services-section"
+      data-aos="fade-up"
+    >
       <div className="container">
 
         <div className="section-title">
           <span>SERVICES</span>
-          <h2>What I Can Do For You</h2>
+
+          <h2>
+            Everything You Need
+            To Grow Online
+          </h2>
+
+          <p className="services-subtitle">
+            From stunning websites to digital marketing,
+            I help businesses create a powerful online presence.
+          </p>
         </div>
 
         <div className="services-grid">
 
           {services.map((service, index) => (
-            <div className="service-card" key={index}>
-
+            <div
+              className="service-card"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 150}
+            >
               <div className="service-icon">
                 {service.icon}
               </div>
@@ -50,6 +67,10 @@ function Services() {
               <h3>{service.title}</h3>
 
               <p>{service.desc}</p>
+
+              <span className="service-arrow">
+                →
+              </span>
 
             </div>
           ))}

@@ -26,30 +26,68 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="projects-section">
-
+    <section
+      id="projects"
+      className="projects-section"
+      data-aos="fade-up"
+    >
       <div className="container">
 
         <div className="section-title">
           <span>PORTFOLIO</span>
-          <h2>Featured Projects</h2>
+
+          <h2>
+            Featured Projects
+          </h2>
+
+          <p className="projects-subtitle">
+            A selection of websites designed and developed
+            to help businesses build a stronger online presence.
+          </p>
         </div>
 
         <div className="projects-grid">
 
           {projects.map((project, index) => (
-            <div className="project-card" key={index}>
+            <div
+              className="project-card"
+              key={index}
+              data-aos="zoom-in"
+              data-aos-delay={index * 150}
+            >
 
-              <img
-                src={project.image}
-                alt={project.title}
-              />
+              <div className="project-image">
+
+                <img
+                  src={project.image}
+                  alt={project.title}
+                />
+
+                <div className="project-overlay">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="overlay-btn"
+                  >
+                    View Project
+                  </a>
+                </div>
+
+              </div>
 
               <div className="project-content">
 
-                <span>{project.category}</span>
+                <span className="project-category">
+                  {project.category}
+                </span>
 
                 <h3>{project.title}</h3>
+
+                <p>
+                  Modern, responsive and optimized
+                  website designed for business growth.
+                </p>
 
                 <a
                   href={project.link}
@@ -68,7 +106,6 @@ function Projects() {
         </div>
 
       </div>
-
     </section>
   );
 }
