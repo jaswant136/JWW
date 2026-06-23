@@ -48,22 +48,31 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu */}
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+  <a href="#about" onClick={() => setMenuOpen(false)}>
+    About
+  </a>
 
-      {menuOpen && (
-        <div className="mobile-menu">
+  <a href="#services" onClick={() => setMenuOpen(false)}>
+    Services
+  </a>
 
-          <a href="#about">About</a>
+  <a href="#projects" onClick={() => setMenuOpen(false)}>
+    Projects
+  </a>
 
-          <a href="#services">Services</a>
+  <a href="#pricing" onClick={() => setMenuOpen(false)}>
+    Pricing
+  </a>
 
-          <a href="#projects">Projects</a>
+  <a href="#contact" onClick={() => setMenuOpen(false)}>
+    Contact
+  </a>
 
-          <a href="#pricing">Pricing</a>
-
-          <a href="#contact">Contact</a>
-
-        </div>
-      )}
+  <a href="#contact" className="mobile-contact-btn">
+    Start Project
+  </a>
+</div>
     </header>
   );
 }
