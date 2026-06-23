@@ -1,8 +1,14 @@
+import {
+  Monitor,
+  Palette,
+  TrendingUp,
+} from "lucide-react";
+
 function Pricing() {
   const services = [
     {
       title: "Website Development",
-      icon: "💻",
+      icon: <Monitor size={34} strokeWidth={1.7} />,
       desc:
         "Modern, responsive and SEO optimized websites for businesses, startups and personal brands.",
       features: [
@@ -17,7 +23,7 @@ function Pricing() {
 
     {
       title: "Brand Design",
-      icon: "🎨",
+      icon: <Palette size={34} strokeWidth={1.7} />,
       featured: true,
       desc:
         "Complete brand identity solutions to make your business stand out online and offline.",
@@ -33,7 +39,7 @@ function Pricing() {
 
     {
       title: "Digital Growth",
-      icon: "🚀",
+      icon: <TrendingUp size={34} strokeWidth={1.7} />,
       desc:
         "Everything needed to grow your brand through social media and digital marketing.",
       features: [
@@ -53,7 +59,10 @@ function Pricing() {
 
         <div className="section-title">
           <span>SOLUTIONS</span>
-          <h2>Services For Growing Brands</h2>
+
+          <h2>
+            Services For Growing Brands
+          </h2>
 
           <p className="pricing-subtitle">
             Everything your brand needs under one roof.
@@ -69,31 +78,21 @@ function Pricing() {
                 service.featured ? "featured-plan" : ""
               }`}
             >
-              <div
-                style={{
-                  fontSize: "3rem",
-                  marginBottom: "20px",
-                }}
-              >
+              <div className="service-icon">
                 {service.icon}
               </div>
 
               <h3>{service.title}</h3>
 
-              <p
-                style={{
-                  marginTop: "15px",
-                  marginBottom: "25px",
-                  color: "#666",
-                  lineHeight: "1.8",
-                }}
-              >
+              <p className="service-desc">
                 {service.desc}
               </p>
 
               <ul>
                 {service.features.map((feature, i) => (
-                  <li key={i}>✓ {feature}</li>
+                  <li key={i}>
+                    ✓ {feature}
+                  </li>
                 ))}
               </ul>
 
@@ -111,6 +110,7 @@ function Pricing() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

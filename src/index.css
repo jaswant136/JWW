@@ -1228,6 +1228,63 @@ section {
   background: #111;
   color: white;
 }
+.service-icon{
+  width:70px;
+  height:70px;
+
+  border-radius:18px;
+
+  background:#fafafa;
+
+  border:1px solid #ececec;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  margin-bottom:30px;
+
+  color:#111;
+
+  transition:.3s;
+}
+
+.pricing-card:hover .service-icon{
+  background:#facc15;
+  border-color:#facc15;
+}
+
+.service-desc{
+  margin-top:15px;
+  margin-bottom:25px;
+
+  color:#666;
+
+  line-height:1.8;
+}
+
+.featured-plan .service-icon{
+  background:#111;
+  color:#fff;
+  border:none;
+}
+
+.featured-plan:hover .service-icon{
+  background:#111;
+}
+
+/* Premium Card Hover */
+
+.pricing-card{
+  transition:.35s ease;
+}
+
+.pricing-card:hover{
+  transform:translateY(-10px);
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,.08);
+}
 /* =========================
    FAQ
 ========================= */
