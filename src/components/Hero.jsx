@@ -7,34 +7,35 @@ function Hero() {
       <div className="container hero-content">
 
         <span className="hero-tag">
-          FREELANCE WEB DESIGNER • DEVELOPER
+          BRANDING • WEB DEVELOPMENT • SEO • SOCIAL MEDIA
         </span>
 
         <h1>
-          I Create
-          <br />
-
-          <span className="animated-text">
-            <TypeAnimation
-              sequence={[
-                "Modern Websites",
-                2000,
-                "Brand Identities",
-                2000,
-                "Social Media Ads",
-                2000,
-                "Business Growth",
-                2000,
-              ]}
-              wrapper="span"
-              repeat={Infinity}
-            />
-          </span>
-        </h1>
+  I Create
+  <br />
+  <span className="animated-text">
+    <TypeAnimation
+      sequence={[
+        "Websites That Convert",
+        2000,
+        "Brands That Inspire",
+        2000,
+        "SEO That Ranks",
+        2000,
+        "Marketing That Sells",
+        2000,
+        "Results That Matter",
+        2000,
+      ]}
+      wrapper="span"
+      repeat={Infinity}
+    />
+  </span>
+</h1>
 
         <p>
-          Helping businesses build a strong online presence
-          through websites, branding and digital marketing.
+          Founder of JWW Studio
+Branding, Development & Growth Agency
         </p>
 
         <div className="hero-buttons">
