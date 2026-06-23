@@ -6,12 +6,13 @@ function Navbar() {
 
   return (
     <header className="navbar">
+
       <div className="container navbar-container">
 
         {/* Logo */}
 
         <a href="#" className="logo">
-          JW<span>.</span>
+          JWW<span>.</span>
         </a>
 
         {/* Desktop Menu */}
@@ -24,55 +25,97 @@ function Navbar() {
 
           <a href="#projects">Projects</a>
 
-          <a href="#pricing">Pricing</a>
+          <a href="#pricing">Solutions</a>
 
           <a href="#contact">Contact</a>
 
         </nav>
 
-        {/* CTA */}
+        {/* Desktop CTA */}
 
         <a href="#contact" className="nav-btn">
-          Hire Me
+          Let's Talk
         </a>
 
-        {/* Mobile Icon */}
+        {/* Mobile Actions */}
 
-        <button
-          className="menu-btn"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
+        <div className="mobile-actions">
+
+          <a
+            href="#contact"
+            className="mobile-talk-btn"
+          >
+            Let's Talk
+          </a>
+
+          <button
+            className="menu-btn"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+        </div>
 
       </div>
 
+      {/* Overlay */}
+
+      {menuOpen && (
+        <div
+          className="mobile-overlay"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+
       {/* Mobile Menu */}
+
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-  <a href="#about" onClick={() => setMenuOpen(false)}>
-    About
-  </a>
 
-  <a href="#services" onClick={() => setMenuOpen(false)}>
-    Services
-  </a>
+        <a
+          href="#about"
+          onClick={() => setMenuOpen(false)}
+        >
+          About
+        </a>
 
-  <a href="#projects" onClick={() => setMenuOpen(false)}>
-    Projects
-  </a>
+        <a
+          href="#services"
+          onClick={() => setMenuOpen(false)}
+        >
+          Services
+        </a>
 
-  <a href="#pricing" onClick={() => setMenuOpen(false)}>
-    Pricing
-  </a>
+        <a
+          href="#projects"
+          onClick={() => setMenuOpen(false)}
+        >
+          Portfolio
+        </a>
 
-  <a href="#contact" onClick={() => setMenuOpen(false)}>
-    Contact
-  </a>
+        <a
+          href="#pricing"
+          onClick={() => setMenuOpen(false)}
+        >
+          Solutions
+        </a>
 
-  <a href="#contact" className="mobile-contact-btn">
-    Start Project
-  </a>
-</div>
+        <a
+          href="#contact"
+          onClick={() => setMenuOpen(false)}
+        >
+          Contact
+        </a>
+
+        <a
+          href="#contact"
+          className="mobile-contact-btn"
+        >
+          Start Project
+        </a>
+
+      </div>
+
     </header>
   );
 }

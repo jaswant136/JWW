@@ -4,48 +4,102 @@ import { FaArrowRight } from "react-icons/fa";
 function Hero() {
   return (
     <section className="hero">
-      <div className="container hero-content">
+      <div className="container">
 
-        <span className="hero-tag">
-          BRANDING • WEB DEVELOPMENT • SEO • SOCIAL MEDIA
-        </span>
+        <div className="hero-content">
 
-        <h1>
-  I Create
-  <br />
-  <span className="animated-text">
-    <TypeAnimation
-      sequence={[
-        "Websites That Convert",
-        2000,
-        "Brands That Inspire",
-        2000,
-        "SEO That Ranks",
-        2000,
-        "Marketing That Sells",
-        2000,
-        "Results That Matter",
-        2000,
-      ]}
-      wrapper="span"
-      repeat={Infinity}
-    />
-  </span>
-</h1>
+          <span className="hero-badge">
+            DIGITAL GROWTH AGENCY
+          </span>
 
-        <p>
-          Founder of JWW Studio
-Branding, Development & Growth Agency
-        </p>
+          <h1>
+            Build Your Brand.
+            <br />
 
-        <div className="hero-buttons">
-          <a href="#projects" className="btn-primary">
-            View My Work <FaArrowRight />
-          </a>
+            <span className="animated-text">
+              <TypeAnimation
+                sequence={[
+                  "Grow Your Business.",
+                  2000,
+                  "Rank On Google.",
+                  2000,
+                  "Generate More Leads.",
+                  2000,
+                  "Dominate Online.",
+                  2000,
+                ]}
+                wrapper="span"
+                repeat={Infinity}
+              />
+            </span>
+          </h1>
 
-          <a href="#contact" className="btn-secondary">
-            Hire Me
-          </a>
+          <p>
+            Helping startups, businesses and personal brands
+            grow through premium websites, branding,
+            SEO optimization and digital marketing.
+          </p>
+
+          <div className="hero-buttons">
+
+            <a
+              href="#contact"
+              className="btn-primary"
+            >
+              Start Project
+            </a>
+
+            <a
+              href="#projects"
+              className="btn-secondary"
+            >
+              View Portfolio
+              <FaArrowRight />
+            </a>
+
+          </div>
+
+          <div className="trust-badge">
+            ★★★★★ Trusted by Growing Brands
+          </div>
+
+        </div>
+
+        <div className="hero-stats-bar">
+
+          <div className="stat-item">
+            <h3>98%</h3>
+            <p>Growth Performance</p>
+          </div>
+
+          <div className="stat-divider"></div>
+
+          <div className="stat-item">
+            <h3>SEO</h3>
+            <p>Excellence</p>
+          </div>
+
+          <div className="stat-divider"></div>
+
+          <div className="stat-item">
+            <h3>Premium</h3>
+            <p>Websites</p>
+          </div>
+
+          <div className="stat-divider"></div>
+
+          <div className="stat-item">
+            <h3>Brand</h3>
+            <p>Identity</p>
+          </div>
+
+          <div className="stat-divider"></div>
+
+          <div className="stat-item">
+            <h3>Growth</h3>
+            <p>Strategy</p>
+          </div>
+
         </div>
 
       </div>
