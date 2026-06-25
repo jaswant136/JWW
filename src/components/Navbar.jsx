@@ -12,7 +12,7 @@ function Navbar() {
         {/* Logo */}
 
         <a href="#" className="logo">
-          JWW<span>.</span>
+          JD&Co.<span>.</span>
         </a>
 
         {/* Desktop Menu */}
