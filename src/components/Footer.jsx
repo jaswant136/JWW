@@ -9,7 +9,7 @@ function Footer() {
           <div>
 
             <h2>
-              JW<span>.</span>
+              JD&Co<span>.</span>
             </h2>
 
             <p>
